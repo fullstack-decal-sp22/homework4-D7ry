@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles/Square.css';
+import './Game'
+import Game from "./Game";
+import Board from "./Board";
 
-function Square() {
+function Square(props) {
     return (
-        <button className="square">
-            {/* TODO */}
+        <button className="square" onClick={props.onClick}>
+            {props.value}
         </button>
     )
 }
